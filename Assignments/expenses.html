@@ -28,7 +28,12 @@
               </tr>
               <tr>
                 <td><label for ="Ins" >Insurance</label> </td>
-                <td><input type="text" id="Ins"name="Ins" value="500"></td>
+                <td><select id = "Ins" name = "Insurance Payment" multiple>
+                  <option>Select</option>
+                  <option value = "Monthly">Monthly</option>
+                  <option value = "Yearly">Yearly</option>
+                  <option
+                </td>
               </tr>
               <tr>
                   <td><input type = "radio" id ="M1" name = "M1" checked>Monthly</td>
@@ -38,11 +43,13 @@
               <tr>
                 <td><label for ="comm" >Comments:</label> </td>
 
-                <td><input type = "textarea" id ="comm" name = "comm" >
+                <td><textarea></textarea>
                 </tr>
                 <tr>
-                    <td><input type = "submit" id ="save" name = "save" value = "save">
+                    <td><input type = "submit" id ="Save" name = "save" value = "save">
+                    <input type ="button" id ="btn" value = "Click" onclick = "alert('Saving Record')";>
                     </tr>
+
         </table>
     </form>
     
