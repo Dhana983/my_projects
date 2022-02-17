@@ -28,27 +28,33 @@
               </tr>
               <tr>
                 <td><label for ="Ins" >Insurance</label> </td>
-                <td><select id = "Ins" name = "Insurance Payment" multiple>
+                <td><select id = "Ins" name = "Insurance Payment" >
                   <option>Select</option>
                   <option value = "Monthly">Monthly</option>
                   <option value = "Yearly">Yearly</option>
-                  <option
+                  
                 </td>
               </tr>
               <tr>
                   <td><input type = "radio" id ="M1" name = "M1" checked>Monthly</td>
-                     <td><input type = "radio" id ="M2" name = "M2" >Yearly
-                   </td>
+                  <td><input type = "radio" id ="M2" name = "M2" >Yearly </td>
               </tr>
               <tr>
-                <td><label for ="comm" >Comments:</label> </td>
+                <td><label for ="misc" >Misc:</label> </td>
 
-                <td><textarea></textarea>
+                  <td><input list = "misc"></td>
+                  <td>
+                    <datalist id="misc">
+                      <option value="Utility"></option>
+                      <option value="Internet"></option>
+                      <option value="Mobile"></option>
+                    </datalist>
+                  </td>
                 </tr>
                 <tr>
                     <td><input type = "submit" id ="Save" name = "save" value = "save">
                     <input type ="button" id ="btn" value = "Click" onclick = "alert('Saving Record')";>
-                    </tr>
+               </tr>
 
         </table>
     </form>
