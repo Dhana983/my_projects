@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses sheet</title>
+</head>
+<body>
+    <form action ="./submit.html" method="post">
+        <h1>Employee Interests Survey Form</h1>
+        <table>
+            <tr>
+              <td><label for ="name" >Enter your name:</label> </td>
+              <td><input type="text" id="name"name="name"></td>
+            </tr>
+            <tr>
+                <td><label for ="dept" >Enter your Department: </label> </td>
+                <td><input type="text" id="dept" name="dept" ></td>
+              </tr>
+              <tr>
+                <td><label for ="intro" >Tell Us A Little About Yourself: </label> </td>
+               <td> <textarea id="intro" name="intro" width="100"height="300"></textarea></td>
+              </tr>
+              
+              <tr>
+                <td><label for ="ex" >Do you exercise at home?</label> 
+                    <input type = "radio" id ="ex" name = "e1" >Yes
+                  <input type = "radio" id1 ="ex" name = "e1" >No 
+                </td>
+                
+                  
+              </tr>
+              <tr>
+                  <td><p>How do you like to read about your favorite books: </p></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="Book" name="book">Book
+                <input type="checkbox" id="Book" name="book">Online Resourses
+                <input type="checkbox" id="Book" name="book">phoneApps
+                <input type="checkbox" id="Book" name="book">Magzines</td>
+                
+
+                  
+              </tr>
+              
+              <tr>
+                <td><label for ="movie" >What genre of movies do you like</label> </td>
+
+                <td><select id = "movie" name = "movie" >
+                    <option>Select</option>
+                    <option value = "aba">abc</option>
+                    <option value = "def">def</option>
+                    
+                </td>
+                </tr>
+                <br><br>
+                <tr>
+                    <td><input type = "submit" id ="Save" name = "save" value = "Submit">
+                        <input type = "reset" id ="reset" name = "reset" value = "RESET">
+                    </td>
+               </tr>
+
+        </table>
+    </form>
+    
+</body>
+</html>
