@@ -5,17 +5,22 @@ page{
 }
 h1
 {
-    text-align: center;
- text-shadow: 2px 2px 4px rgb(177, 25, 207)
+   text-align: center; 
+ text-shadow: 2px 2px 4px rgb(173, 49, 96)
 }
 
 #head
 {
     text-align: center;
- text-transform: capitalize;   
+    color: rgb(187, 17, 17);
+     text-transform: capitalize;   
+}
+#tag{
+    color:rgb(112, 216, 121);
 }
 td{
     text-align: center; 
+    
 }
 a{
     text-decoration:none ;
