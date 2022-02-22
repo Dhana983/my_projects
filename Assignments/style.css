@@ -1,0 +1,25 @@
+page{
+    text-align: center;
+    border:green ;
+
+}
+h1
+{
+    text-align: center;
+ text-shadow: 2px 2px 4px rgb(177, 25, 207)
+}
+
+#head
+{
+    text-align: center;
+ text-transform: capitalize;   
+}
+td{
+    text-align: center; 
+}
+a{
+    text-decoration:none ;
+}
+p:nth-child(even){ background-color :rgb(136, 96, 96) ;
+    
+}
