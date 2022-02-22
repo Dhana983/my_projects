@@ -8,7 +8,14 @@ h1
    text-align: center; 
  text-shadow: 2px 2px 4px rgb(173, 49, 96)
 }
+div+p
+{ 
+background-color: burlywood;
+}
 
+table{
+    margin: auto;
+}
 #head
 {
     text-align: center;
@@ -24,7 +31,4 @@ td{
 }
 a{
     text-decoration:none ;
-}
-p:nth-child(even){ background-color :rgb(136, 96, 96) ;
-    
 }

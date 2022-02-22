@@ -6,11 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expenses sheet</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+      input[type=text]:focus
+      {
+        background-color:aqua ;
+      }
+    </style>
 </head>
 <body>
+  
     <form action ="./submit.html" method="post">
         <h1>Employee Interests Survey Form</h1>
-        <table align="center">
+        <table 
+        >
             <tr>
               <td><label for ="name" >Enter your name:&#128288;</label> </td>
               <td><input type="text" id="name"name="name"></td>
@@ -55,8 +63,9 @@
                     
                 </td>
                 </tr>
-                <br><br>
+                
                 <tr>
+                  
                     <td><input type = "submit" id ="Save" name = "save" value = "Submit">
                         <input type = "reset" id ="reset" name = "reset" value = "RESET">
                         <input type ="button" id ="btn" value = "Click" onclick = "alert('Employee survey form is sumitted')"; >
@@ -65,6 +74,39 @@
 
         </table>
     </form>
-    
+    <br><br>
+    <div>
+      This is my first div tag
+    </div>
+    <div >
+      <p> we can use as many div tags we want</p>
+      <p style="font-style: italic ;"> Div tag is used to divide the page into different sections </p>
+      This is my second div tag
+    </div>
+    <h3 style ="color:yellowgreen ;"> 2.Put a smiley before list of names something like: </h3>
+    <table>
+      <tr>
+      <td><label id="name1"> Name &nbsp;</label>
+        <select id = "name1" name = "name1" >
+        <option>Names</option>
+        <option value = "john">&#128512; john</option>
+        <option value = "peter">&#128512; jpeter</option>
+        <option value = "sam">&#128512; sam</option>
+        <option value = "iyan">&#128512; iyan</option>
+        
+    </td>
+    </tr>
+    </table>
+    <h3 style ="color:red ;"> These are the examples of keyboard font size units</h3>
+    <p style="font-size:xx-small ;">This is extra extrasmall emoji &#127752;</p>
+    <p style="font-size:x-small ;">This is extra small emoji &#127752;</p>
+    <p style="font-size:small ;">This is  small emoji &#127752;</p>
+    <p style="font-size:medium ;">This is medium emoji &#127752;</p>
+    <p style="font-size:large ;">This is large emoji &#127752;</p>
+    <p style="font-size:x-large ;">This is x-large emoji &#127752;</p>
+    <p style="font-size:xx-large;">This is xx-large emoji &#127752;</p>
+    <br>
+    <h3 style ="color:red ;"> These are the examples of viewport font size units</h3>
+    <p style="font-size:10vw;">This is 10vw emoji &#127752;</p>
 </body>
 </html>

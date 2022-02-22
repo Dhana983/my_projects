@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expenses sheet</title>
     <link rel="stylesheet" href="style.css">
+    <style> input[type=text]:focus
+    {
+      background-color: pink  ;
+    }
+      p:nth-child(even)
+      {
+         background-color :rgb(136, 96, 96) ;
+      }
+    </style>
     
 </head>
 <body >
@@ -14,7 +23,7 @@
 <p align="center" style="color:red">Here is the monthly Expenses sheet</p>
     <form  action ="./details.html" method="post">
         
-        <table align="center" >
+        <table  >
             <tr>
               <td><label for ="date" >Date&nbsp;&#128197;:</label> </td>
               <td><input type="date" id="dte1"name="dte1"></td>
