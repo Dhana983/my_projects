@@ -7,20 +7,22 @@
     <title>Document</title>
    <link rel="stylesheet" href="styletabs.css">
    <style>
-       input { display: none; }           
+       input { display: none; }     /*To hide radio buttons*/      
        
-        input + label { display: inline-block;} 
-        input ~ .tab { display: none } 
+        input + label { display: inline-block;}  /*Show labels inline*/
+        input ~ .tab { display: none }  /*Hide contents*/
 
+        /*Padding for each tab*/
         input + label{
             border: 1px solid #999;
             background: #AAA;
-            padding: 4px 12px;
+            padding: 4px 4px;
             border-radius: 4px 4px 0 0;
             position: relative;
             top: 1px;
         }
 
+        /*To Hilight the selected tab*/
         input:checked + label {
             background: #FFF;
             border-bottom: 1px solid transparent;
@@ -32,13 +34,13 @@
         }
 
         #tab1:checked ~ .tab.content1{
-            background-color: aqua;background-image:url(Assignments/solarsystem.jpg); display: block; object-fit: contain; position: absolute;
+            background-color: aqua;background-image:url(Assignments/sunset.jpg); display: block; object-fit: contain; position: absolute;
         }
         #tab2:checked ~ .tab.content2{
             background-color: coral; background-image:url(Assignments/fullmoon.jpg); display: block; position: absolute;
         }   
         #tab3:checked ~ .tab.content3{
-            background-color: goldenrod;background-image:url(Assignments/galaxy.jpg); display: block; position: absolute;
+            background-color: goldenrod;background-image:url(Assignments/Flower.jpg); display: block; position: absolute;
         }
  </style>
 
