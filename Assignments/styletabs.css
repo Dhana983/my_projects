@@ -1,8 +1,13 @@
-input + label {             /* box with rounded corner */
-    border: 1px solid #999;
-    background: #EEE;
-    padding: 4px 12px;
-    border-radius: 4px 4px 0 0;
-    position: relative;
-    top: 1px;
-  }
+
+.name{
+  display:inline;
+  
+  margin-right: 1rem;
+ 
+}
+#list:hover{
+  background-color: aqua;
+}
+
+  
+

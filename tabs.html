@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        wrapper {
+  position: relative;
+}
+.tab-container { 
+  display: none;
+  position: absolute;
+  top: 100;
+  left: 200;
+  background: red;
+}
+#tab1:hover{
+background-color: aqua;
+}
+
+#tab2:hover{
+background-color: green;
+}
+
+#tab3:hover{
+background-color: yellow;
+}
+
+.tab-container:first-child { display: block }
+
+:target { display: block }
+
+
+
+/* just for demo */
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+    </style>
+</head>
+<body>
+    <ul>
+    <li id ="tab1"><a href="#tab-1-container">Tab 1</a></li>
+    <li id ="tab2"><a href="#tab-2-container">Tab 2</a></li>
+    <li id="tab3"><a href="#tab-3-container">Tab 3</a></li>
+  </ul>
+  
+  <div class="wrapper">
+    <div id="tab-1-container" class="tab-container">
+      Tab 1 content
+      <h1>This is my first tab content</h1>
+    </div>
+  
+    <div id="tab-2-container" class="tab-container">
+    Tab 2 content
+    <h1>This is my Second tab content</h1>
+
+    </div>
+  
+    <div id="tab-3-container" class="tab-container">
+    <iframe id="tab1" src="Assignments/details.html" width="800px" height="600px">Details</iframe>
+
+    </div>
+  </div>
+</body>
+</html>

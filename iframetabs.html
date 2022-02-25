@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assignments/styletabs.css">
+    <style>
+        .wrapper{position: relative;}
+         #list {
+            border: 4px solid #999;
+            background: rgb(167, 76, 76);
+            padding: 8px 8px;
+            border-radius: 8px 8px 0 0;
+            position: relative;
+            top: 1px;
+        }
+        #paragraph{
+            border: 4px solid #999;
+            background: rgb(173, 101, 101);
+            padding: 8px 8px;
+            border-radius: 8px 8px 0 0;
+            position: relative;
+            top: 1px;
+        }
+       #image{
+            border: 4px solid #999;
+            background: rgb(136, 78, 78);
+            padding: 8px 8px;
+            border-radius: 8px 8px 0 0;
+            position: relative;
+            top: 1px;
+        }
+        
+        .p { 
+            display: none;
+            position: absolute;
+            top: 100;
+            left: 200;
+        }
+       
+        :target { display: block }
+        .parent {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            }
+
+        .name {
+        display: inline-block;
+        margin-right: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent" >
+        <div class="name" id="list"> <a href="#listtab">List</a> </div>
+        <div class="name" id="paragraph"> <a href="#paragraphtab">Paragraph</a></div>
+        <div class="name" id="image"><a href="#imagetab">image</a></div>
+    </div>
+    <div class="wrapper">
+        <div class="p" id="listtab">
+            <iframe id="tab1" src="Assignments/details.html" target="iframe_a" width="800px" height="600px">Details</iframe>
+        </div>
+        <div class="p"id="paragraphtab">
+            <p>This is my first paragraph</p>
+        </div>
+        <div class="p" id="imagetab">
+            <img src="Assignments/school.jpg" alt="schoolimage">
+     </div>
+    </div>
+   
+        
+
+</body>
+
+</html>
