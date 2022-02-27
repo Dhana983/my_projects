@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-auto-rows: 100px;
+            padding:50px;
+        }
+
+        .green {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            background-color: rgb(131, 204, 131);
+            margin-bottom: 1%;
+            padding: 30px;
+        }
+
+        .yellow {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            background-color: rgb(223, 223, 41);
+            margin-right: 3%;
+            padding-top: 25px;
+        }
+
+        .red{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            background-color: rgb(201, 107, 107);
+            margin-right: 5%;
+            padding-top: 25px;
+        }
+
+        .blue{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 5;
+            background-color: blue;
+            padding: 30px;
+        }
+        
+        .orange{
+            background-color: rgb(226, 157, 29);
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 4;
+            grid-row-end: 4;
+            margin-top: 2%;
+            margin-right:2%;
+            padding: 30px;
+        }
+
+        #cell{
+            display:flex;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+
+        #cell > div{
+        
+            margin:10px;
+            background-color: white;
+            line-height: 30px;
+            text-align: center;
+            flex:1 1 80px
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="green">GREEN</div>
+        <div class="yellow">&emsp;YELLOW
+            <div id="cell">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+        </div>
+        <div class="red">&emsp;RED
+            <div id="cell">
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+                <div>D</div>
+            </div>
+        </div>
+
+        <div class="blue">BLUE</div>
+        <div class="orange">ORANGE</div>
+        
+      </div>
+    
+</body>
+</html>

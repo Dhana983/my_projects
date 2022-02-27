@@ -9,5 +9,79 @@
   background-color: aqua;
 }
 
+ .container{
+   padding:1em
+ } 
+
+.cell{
+  background-color: aquamarine;
+  padding: 1em;
+}
+.flex{
+  display:flex;
+  gap:1em;
+  flex-wrap: wrap;
+}
+.flex > .cell{
+  flex-grow:2;
+}
+.flex > .cell:nth-child(2){
+  flex-grow:4;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap:1em;
+}
+#animation{
+  width:100px;
+  height: 100px;
+  background-color: blue;
+  animation-name: my-animation;
+  animation-duration: 5s;
+  animation-iteration-count: 4;
+}
+@keyframes my-animation {
+  from{background-color: blue;}
+  to{background-color: green;}
+}
+/*
+@keyframes my-animation {
+  0%{background-color: blue;}
+  25%{background-color: green;}
+  50%{background-color: red;}
+  100%{background-color: pink;}
+}*/
+.animation{
+  width:100px;
+  height: 100px;
+  position: relative;
+  background-color: rgb(51, 160, 160);
+  animation-name: new-animation;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-play-state: ;
   
 
+}
+@keyframes new-animation{
+from{left:0px;}
+to{left:250px;}
+
+}
+#div11 {
+  animation-timing-function: linear
+}
+#div22{
+  animation-timing-function: ease
+}
+
+#div33{
+  animation-timing-function: ease-in;
+}
+#div55{
+  animation-timing-function: ease-out ;
+}
+#div55{
+  animation-timing-function: ease-in-out;
+}
