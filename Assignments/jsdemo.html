@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="txtid">Before the script tag-----</p>
+<br>
+<label for="text" id="name">Username</label>
+<input type= "text" id="name"size="20"><br>
+<label for="text" id="pass">Password</label>
+<input type= "text" id="pass" size="20"><br>
+    <button onclick="changecolor()">Clickbutton</button>
+</body>
+<script>
+console.log("Executing the script from with in the Html");
+function changecolor(){
+    var name = document.getElementById("name").value;
+    var password = document.getElementById("pass").value;
+    if(name ==""|| password == "" ){
+        alert('name and password should not be blank');
+    }
+    else{
+        alert('welcome' +name);
+    }
+
+    alert('hello'+ name)
+    document.body.style.backgroundColor="pink";
+    document.getElementById("txtid").innerHTML="After Button Clicked";
+    
+    function sum(){
+        var a,b,c;
+    a = Number(document.getElementById(first).value);
+    b = Number(document.getElementById(second).value);
+    c = a+b;
+    document.getElementById(result).value = c;
+    }
+
+
+
+}
+
+</script>
+</html>
