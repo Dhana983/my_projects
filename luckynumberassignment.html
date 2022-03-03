@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #color{
+            margin: auto;
+                width: 30%;
+                --border: 3px solid #73AD21;
+                --padding: 10px
+        }
+    </style>
+<script>
+   var  attempts=1;
+   function myFunction(){
+       var inputValue = Number(document.getElementById("number").value);
+       if(inputValue==5)
+       {
+           document.getElementById("output").innerHTML="You guessed it right and it took "+attempts+" attempts to find out!!!" ;
+           attempts=1;   
+       }
+       else{
+           ++attempts;
+           document.getElementById("number").value="";
+           document.getElementById("output").innerHTML="Not Really! Give it another try....";
+
+           }
+   }
+</script>
+
+</head>
+<body>
+    <div id="color">
+    <label for="number"  style="color: red; font-size: 25px;;"> Guess My Lucky Number:</label>
+    &nbsp;<br><br>
+    <input type="text" id="number" style="color: blue;" placeholder="Enter the number here">
+    <button onclick = "myFunction();">Click To Find </button>
+<p id="output"></p>
+</div>
+</body>
+</html>
