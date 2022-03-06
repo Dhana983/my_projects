@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getParams(){
+            var idx = document.URL.indexOf('?');
+            var params = new Array();
+            if (idx != -1) {
+                var pairs = document.URL.substring(idx+1, document.URL.length).split('&');
+                for (var i=0; i<pairs.length; i++){
+                    nameVal = pairs[i].split('=');
+                    params[nameVal[0]] = nameVal[1];
+                }
+            }
+            return params;
+        }
+        params = getParams();
+        firstname = unescape(params["firstname"]);
+        lastname = unescape(params["lastname"]);
+        age = unescape(params["age"]);
+        ename = unescape(params["ename"]);
+        eid = unescape(params["eid"]);
+        ehours = unescape(params["ehours"]);
+        edesignation = unescape(params["edesignation"]);
+        
+
+        salary=0;
+        if(edesignation=='manager'){
+            salary = (ehours*90);
+        }else if(edesignation=='consultant'){
+            salary = (ehours*70);
+        }else if(edesignation=='trainee'){
+            salary = (ehours*45);
+        }
+        document.write(ename+" who is a "+"'"+edesignation+"'"+" will get "+"$"+salary + "<br>");
+
+        // document.write("firstname = " + firstname + "<br>");
+        // document.write("lastname = " + lastname + "<br>");
+        // document.write("age = " + age + "<br>");
+
+    </script>
+</body>
+</html>
