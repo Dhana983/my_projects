@@ -5,36 +5,36 @@ class Employee{
     #ehours;
     
 
-    get getName(){
+    get getname(){
         return this.#ename;
     }
-    set setName(name){
+    set setname(name){
         this.#ename=name;
     }
-    get getDesignation(){
+    get getdesignation(){
         return this.#edesignation;
     }
-    set setDesignation(designation){
+    set setdesignation(designation){
         this.#edesignation=designation;
     }
-    get getHours(){
+    get gethours(){
         return this.#ehours;
     }
-    set setHours(hours){
+    set sethours(hours){
         this.#ehours=hours;
     }
 
      salaryCalc(){
         let salary = 0;
-        if(this.getDesignation=="manager"){
-            salary = (this.getHours*90);
-        }else if(this.getDesignation=="consultant"){
-            salary = (this.getHours*70);
-        }else if(this.getDesignation=="trainee"){
-            salary = (this.getHours*45);
+        if(this.getdesignation=="manager"){
+            salary = (this.gethours*90);
+        }else if(this.getdesignation=="consultant"){
+            salary = (this.gethours*70);
+        }else if(this.getdesignation=="trainee"){
+            salary = (this.gethours*45);
         }
         this.ename='Dhana';
-        var outputText = this.getName+" who is a "+"'"+this.getDesignation+"'"+" will get "+"$"+salary;
+        var outputText = this.getname+" who is a "+"'"+this.getdesignation+"'"+" will get "+"$"+salary;
         
         return outputText;
     }
