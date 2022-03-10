@@ -1,0 +1,33 @@
+*{
+    background-color: rgba(198, 243, 227, 0.603);  ;
+    margin: auto;
+} 
+body{
+    text-align: center;  
+}
+a{
+    text-decoration: none; 
+    color:#007700;
+}
+th{
+    text-transform: capitalize!important;
+}
+table{
+    border: solid red;
+    width: 50vw;
+    height: 300px;
+    margin: 10px auto 0px auto;
+    text-align: center;
+    padding: 5px; 
+  }
+  div+p{ 
+    font-size: x-small;
+}     
+#heading2{
+    text-align: center;
+    text-shadow: 2px 2px 5px red;
+    font-size: 5vw;
+    }
+
+   
+   

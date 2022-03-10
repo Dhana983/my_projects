@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href ="style9.css"> 
+    <title>Active Tabs</title>
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">  
+    <style>    
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;  
+    }
+    nav li {
+        display: inline;
+        border: solid;
+        border-width: 1px 1px 0 1px;
+        margin: 0 5px 0 0;
+    }
+    nav li a {
+        text-decoration: none;
+        height: 30px;
+        padding: 0 65px;    
+        color: #000000; 
+        background-color: red;
+    }
+    nav li a:hover {
+        background-color: #33CC33;    
+    }
+
+    .active{
+     color:#ffffff;
+     background-color: purple;
+    }      
+
+    </style>
+</head>
+<body>  
+      
+<nav> 
+    <ul>
+        <li ><a href="./form1.html" target = "myFrame" id ="form1" class = "active" onclick="makeActive(this.id)">Women's Empowerment</a></li>
+        <li ><a href= "./form2.html" target = "myFrame" id ="form2" onclick="makeActive(this.id)">Harriet Tubman</a></li>    
+        <li ><a href= "./form3.html" target = "myFrame" id ="form3" onclick="makeActive(this.id)">Malala Yousafzai</a></li>         
+    </ul>
+</nav> 
+<iframe class ="display" src = "./form1.html"  width="800" height="700" name="myFrame"></iframe>
+
+<!--<object class="display" data = "SPactivemenu.html"  width="600" height="1000" name="myframe"></object>-->
+
+<!--<object class ="display" src = "./form1.html"  width="200" height="200" name="myFrame"></object>-->
+
+<script>
+        function makeActive(id){
+            
+            if(id === "form1"){
+                document.getElementById("form1").className = "active";
+                document.getElementById("form2").classList.remove("active");
+                document.getElementById("form3").classList.remove("active");
+            }
+            else if(id === "form2"){
+                document.getElementById("form2").className = "active";
+                document.getElementById("form3").classList.remove("active");
+                document.getElementById("form1").classList.remove("active");
+            }   
+            else if(id === "form3"){
+                document.getElementById("form3").className = "active";
+                document.getElementById("form1").classList.remove("active");
+                document.getElementById("form2").classList.remove("active");
+            }   
+        }
+</script>
+</body>
+</html>

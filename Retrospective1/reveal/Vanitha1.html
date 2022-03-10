@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Womens Day</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="spirnt1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="style11.css">
+</head>
+<body>
+    
+    <div class="popup-screen active">
+
+        <div class="popup-box"><i class="fa fa-times close-btn"></i>
+<h2>Thank you for all the Men who are behind the Womens here  </h2>
+
+<p></p>
+
+<a href="https://www.google.com/" class="btn">Accept Cookies policy...</a>
+
+        </div>
+
+    </div>
+    <div class="text-container">
+    
+    <h1> Happy Womens day<br><span> </span></h1>
+<div class ="animated-text">
+    <h2>Thank you </h2>
+    <h2>Gracious </h2>
+    <h2>Gracious </h2>
+    <h2>Namaste </h2>
+    <h2>Gracious </h2>
+</div>
+</div> 
+<br>
+<br><br>
+<div class="slider">
+    <div class="slides">
+
+<input type="radio" name="radio-btn" id="radio1" checked="true">
+
+<input type="radio" name="radio-btn" id="radio2">
+
+
+
+<input type="radio" name="radio-btn" id="radio3">
+
+
+
+<input type="radio" name="radio-btn" id="radio4">
+
+
+
+<input type="radio" name="raido-btn" id="radio5">
+
+        <div class="slide first"><img src="./img/img1.jpeg"></div>
+        <div class="slide">    <img src="./img/img2.jpeg">   </div>
+        <div class="slide">  <img src="./img/img3.jpeg">  </div>
+
+        <div class="slide">   <img src="./img/img4.jpeg"> </div>
+        <div class="slide">    <img src="./img/img5.jpeg"> </div>
+
+<div class="navigation-auto">
+  <div class="auto-btn1"></div>
+  <div class="auto-btn2"></div>
+  <div class="auto-btn3"></div>
+  <div class="auto-btn4"></div>
+  <div class="auto-btn5"></div>
+ 
+</div>
+</div>
+
+<div class="navigation-manual">
+<label for="radio1" class="manual-btn"></label>
+<label for="radio2" class="manual-btn"></label>
+<label for="radio3" class="manual-btn"></label>
+<label for="radio4" class="manual-btn"></label>
+<label for="radio5" class="manual-btn"></label>
+
+</div>
+</div>
+
+
+
+
+
+<div class="animation-container">
+
+            <div class="burst">
+                           
+                
+                        <div class="line"> </div>
+                        <div class="line"> </div>
+                        <div class="line"> </div>
+                        <div class="line"> </div>
+                        <div class="line"> </div>
+                        <div class="line"> </div>
+                        <div class="line"> </div>
+                        <div class="line"> </div>
+                        <div class="line"> </div>
+                        <div class="line"> </div>
+                        <div class="line"> </div>
+                        <div class="line"> </div>
+                        <div class="line"> </div>
+                        <div class="line"> </div>
+                        <div class="line"> </div>
+                        
+                       
+                       
+
+
+            </div>
+
+</div>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+function createBurst(){
+
+let animContainer=document.querySelector('.animation-container');
+let burst = document.querySelector(".burst");
+
+burst.style.top = Math.random()*750 +'px';
+burst.style.left = Math.random()*950 +'px';
+
+let burstClone=burst.cloneNode(true);
+animContainer.appendChild(burstClone);
+
+
+
+setTimeout(() => {
+burstClone.remove();
+},20000);}
+
+
+setInterval(createBurst, 2000);
+
+
+var counter= 1;
+
+setInterval(function(){
+    document.getElementById('radio'+counter).checked=true;
+    counter++;
+    if(counter>5){
+
+
+        counter=1;
+
+    }
+
+    
+},2000);
+
+
+
+
+const popupScreen = document.querySelector(".popup-screen");
+        const popupBox = document.querySelector(".popup-box");
+        const closeBtn = document.querySelector(".close-btn");
+
+        window.addEventListener("load",() => {
+
+            setTimeout(() => {
+                 popupScreen.classList.add("active");
+
+        },2000);
+
+
+    });
+
+
+
+    closeBtn.addEventListener("click",() => {
+
+        popupScreen.classList.remove("active");
+        document.cookie ="WebsiteName=testWebsite; max-age=" + 24 * 60 * 60;
+    });
+const WebsiteCookie = document.cookie.indexof("WebsiteName=");
+
+
+</script>
+
+
+
+</body>
+</html>
